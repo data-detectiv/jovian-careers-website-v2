@@ -1,12 +1,12 @@
  <div class="mt-4 row"  style="color: rgb(120,120,120)">
    <div class="col-10">
-          <h4>{{job["Title"]}}</h4>
+          <h4>{{job[1]}}</h4>
      <div>
-          <b>Location: </b>{{job["location"]}}
+          <b>Location: </b>{{job[2]}}
       </div>
-          {% if 'Salary' in job%}
+          {% if job[3] in job%}
      <div class="border-bottom">
-          <b>Salary: </b>{{job["Salary"]}}
+          <b>Salary: </b>{{job[4]}}{{job[3]}}
      </div>
           {%endif%}
    </div>
